@@ -4,29 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explore-Css3</title>
+    <title>Overfiow</title>
     <style>
       .box {
         height: 500px;
         width: 500px;
+        padding: 10px;
         border: 5px solid darkcyan;
         overflow-y: scroll;
       }
       .local-box {
         height: 500px;
         width: 500px;
+        padding: 10px;
         border: 5px solid gray;
         overflow-y: scroll;
       }
-      .example-div {
+      .example-div,
+      .new-overflow {
         width: 150px;
         border: 3px solid navy;
         overflow: hidden;
       }
-      .short-text {
+      .short-text,
+      .overfolw {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .container {
+        border: 2px solid salmon;
+        min-width: 300px;
+        max-width: 400px;
+        min-height: 100px;
+        max-height: 200px;
+        overflow-y: scroll;
+        padding: 5px;
+        margin: 20px;
       }
     </style>
   </head>
@@ -144,6 +158,41 @@
         delectus ut vero modi aliquid perferendis cupiditate accusamus deleniti.
         Optio commodi necessitatibus illum consectetur veritatis tempore,
         mollitia sunt quae in similique, esse obcaecati dolor
+      </p>
+    </div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        doloremque ducimus delectus aut explicabo? Alias accusantium harum eos
+        consequuntur saepe repudiandae reiciendis exercitationem laudantium
+        possimus fugit esse quisquam, et eaanimi. Sapiente soluta error vitae
+        assumenda nihil natus numquam earum, quia officia ut quis ipsum ab quas.
+        Quis, laborum quam. Est ab labore tenetur illo aliquid quam rerum quidem
+        nulla quo exercitationem eveniet sapiente, ut ex a veritatis voluptatem
+        inventore odit totam atque possimus magni assumenda, aperiam nemo.
+        Officiis eum fuga doloribus voluptatibus dolores ullam ratione at, minus
+        ab eos porro! Itaque consequatur impedit minima dignissimos suscipit?
+        Tempore, reprehenderit. Et nemo quaerat dolorum, autem eum quidem eius
+        quia harum sequi eveniet adipisci saepe nihil id aliquid suscipit ea
+        mollitia quae exercitationem aspernatur ducimus! Praesentium quaerat
+        eius dolor rerum, consectetur corrupti, id maxime, quas recusandae
+        laudantium earum doloribus tenetur dolores fugiat? Saepe itaque mollitia
+        quis, dolores neque, nobis perspiciatis et eum deleniti autem tempora
+        dicta dolorum placeat? Error qui perferendis totam maxime eos, facere
+        inventore mollitia nisi minus, in iure adipisci sint laborum! Numquam,
+        repudiandae quos sapiente recusandae non repellat incidunt tempore
+        veritatis fugit aliquam sed voluptatem, vel optio ut illum at
+        blanditiis! Incidunt rerum animi facere reprehenderit ratione vitae,
+        quod nemo molestias modi quidem omnis voluptas dolorem conseq.
+      </p>
+    </div>
+    <div class="new-overflow">
+      <p
+        class="overfolw"
+        title="this is not properly visible for text writing is not properly visible for text writi"
+      >
+        this is not properly visible for text writing is not properly visible
+        for text writiis not properly visible for text writi
       </p>
     </div>
   </body>
